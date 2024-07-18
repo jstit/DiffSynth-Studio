@@ -1,29 +1,28 @@
 # DiffSynth Studio
 
-
 ## Introduction
 
 DiffSynth Studio is a Diffusion engine. We have restructured architectures including Text Encoder, UNet, VAE, among others, maintaining compatibility with models from the open-source community while enhancing computational performance. We provide many interesting features. Enjoy the magic of Diffusion models!
 
 Until now, DiffSynth Studio has supported the following models:
 
-* [ExVideo](https://huggingface.co/ECNU-CILab/ExVideo-SVD-128f-v1)
-* [Kolors](https://huggingface.co/Kwai-Kolors/Kolors)
-* [Stable Diffusion 3](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
-* [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt)
-* [Hunyuan-DiT](https://github.com/Tencent/HunyuanDiT)
-* [RIFE](https://github.com/hzwer/ECCV2022-RIFE)
-* [ESRGAN](https://github.com/xinntao/ESRGAN)
-* [Ip-Adapter](https://github.com/tencent-ailab/IP-Adapter)
-* [AnimateDiff](https://github.com/guoyww/animatediff/)
-* [ControlNet](https://github.com/lllyasviel/ControlNet)
-* [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
-* [Stable Diffusion](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+- [ExVideo](https://huggingface.co/ECNU-CILab/ExVideo-SVD-128f-v1)
+- [Kolors](https://huggingface.co/Kwai-Kolors/Kolors)
+- [Stable Diffusion 3](https://huggingface.co/stabilityai/stable-diffusion-3-medium)
+- [Stable Video Diffusion](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt)
+- [Hunyuan-DiT](https://github.com/Tencent/HunyuanDiT)
+- [RIFE](https://github.com/hzwer/ECCV2022-RIFE)
+- [ESRGAN](https://github.com/xinntao/ESRGAN)
+- [Ip-Adapter](https://github.com/tencent-ailab/IP-Adapter)
+- [AnimateDiff](https://github.com/guoyww/animatediff/)
+- [ControlNet](https://github.com/lllyasviel/ControlNet)
+- [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+- [Stable Diffusion](https://huggingface.co/runwayml/stable-diffusion-v1-5)
 
 ## News
 
-
 - **June 21, 2024.** 🔥🔥🔥 We propose ExVideo, a post-tuning technique aimed at enhancing the capability of video generation models. We have extended Stable Video Diffusion to achieve the generation of long videos up to 128 frames.
+
   - [Project Page](https://ecnu-cilab.github.io/ExVideoProjectPage/)
   - Source code is released in this repo. See [`examples/ExVideo`](./examples/ExVideo/).
   - Models are released on [HuggingFace](https://huggingface.co/ECNU-CILab/ExVideo-SVD-128f-v1) and [ModelScope](https://modelscope.cn/models/ECNU-CILab/ExVideo-SVD-128f-v1).
@@ -33,6 +32,7 @@ Until now, DiffSynth Studio has supported the following models:
 - **June 13, 2024.** DiffSynth Studio is transferred to ModelScope. The developers have transitioned from "I" to "we". Of course, I will still participate in development and maintenance.
 
 - **Jan 29, 2024.** We propose Diffutoon, a fantastic solution for toon shading.
+
   - [Project Page](https://ecnu-cilab.github.io/DiffutoonProjectPage/)
   - The source codes are released in this project.
   - The technical report (IJCAI 2024) is released on [arXiv](https://arxiv.org/abs/2401.16224).
@@ -40,6 +40,7 @@ Until now, DiffSynth Studio has supported the following models:
 - **Dec 8, 2023.** We decide to develop a new Project, aiming to release the potential of diffusion models, especially in video synthesis. The development of this project is started.
 
 - **Nov 15, 2023.** We propose FastBlend, a powerful video deflickering algorithm.
+
   - The sd-webui extension is released on [GitHub](https://github.com/Artiprocher/sd-webui-fastblend).
   - Demo videos are shown on Bilibili, including three tasks.
     - [Video deflickering](https://www.bilibili.com/video/BV1d94y1W7PE)
@@ -49,6 +50,7 @@ Until now, DiffSynth Studio has supported the following models:
   - An unofficial ComfyUI extension developed by other users is released on [GitHub](https://github.com/AInseven/ComfyUI-fastblend).
 
 - **Oct 1, 2023.** We release an early version of this project, namely FastSDXL. A try for building a diffusion engine.
+
   - The source codes are released on [GitHub](https://github.com/Artiprocher/FastSDXL).
   - FastSDXL includes a trainable OLSS scheduler for efficiency improvement.
     - The original repo of OLSS is [here](https://github.com/alibaba/EasyNLP/tree/master/diffusion/olss_scheduler).
@@ -60,7 +62,6 @@ Until now, DiffSynth Studio has supported the following models:
   - [Project Page](https://ecnu-cilab.github.io/DiffSynth.github.io/).
   - The source codes are released in [EasyNLP](https://github.com/alibaba/EasyNLP/tree/master/diffusion/DiffSynth).
   - The technical report (ECML PKDD 2024) is released on [arXiv](https://arxiv.org/abs/2308.03463).
-
 
 ## Installation
 
@@ -86,13 +87,13 @@ Generate high-resolution images, by breaking the limitation of diffusion models!
 
 LoRA fine-tuning is supported in [`examples/train`](./examples/train/).
 
-|Model|Example|
-|-|-|
-|Stable Diffusion|![1024](https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/6fc84611-8da6-4a1f-8fee-9a34eba3b4a5)|
-|Stable Diffusion XL|![1024](https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/67687748-e738-438c-aee5-96096f09ac90)|
-|Stable Diffusion 3|![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/4df346db-6f91-420a-b4c1-26e205376098)|
-|Kolors|![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/53ef6f41-da11-4701-8665-9f64392607bf)|
-|Hunyuan-DiT|![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/60b022c8-df3f-4541-95ab-bf39f2fa8bb5)|
+| Model               | Example                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Stable Diffusion    | ![1024](https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/6fc84611-8da6-4a1f-8fee-9a34eba3b4a5)      |
+| Stable Diffusion XL | ![1024](https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/67687748-e738-438c-aee5-96096f09ac90)      |
+| Stable Diffusion 3  | ![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/4df346db-6f91-420a-b4c1-26e205376098) |
+| Kolors              | ![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/53ef6f41-da11-4701-8665-9f64392607bf) |
+| Hunyuan-DiT         | ![image_1024](https://github.com/modelscope/DiffSynth-Studio/assets/35051019/60b022c8-df3f-4541-95ab-bf39f2fa8bb5) |
 
 ### Toon Shading
 
@@ -110,8 +111,52 @@ https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/59fb2f7b-8de0-44
 
 ## Usage (in WebUI)
 
+### Install models (Toon Shading with Edit)
+
 ```
-python -m streamlit run DiffSynth_Studio.py
+cd models/
+cd stable_diffusion/
+wget -O aingdiffusion_v12.safetensors https://civitai.com/api/download/models/229575
+cd ../AnimateDiff
+wget -O mm_sd_v15_v2.ckpt https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt
+cd ../ControlNet
+wget -O control_v11p_sd15_lineart.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+wget -O control_v11f1e_sd15_tile.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth
+wget -O control_v11f1p_sd15_depth.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth
+wget -O control_v11p_sd15_softedge.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_softedge.pth
+cd ../Annotators
+wget -O dpt_hybrid-midas-501f0c75.pt https://huggingface.co/lllyasviel/Annotators/resolve/main/dpt_hybrid-midas-501f0c75.pt
+wget -O ControlNetHED.pth https://huggingface.co/lllyasviel/Annotators/resolve/main/ControlNetHED.pth
+wget -O sk_model.pth https://huggingface.co/lllyasviel/Annotators/resolve/main/sk_model.pth
+wget -O sk_model2.pth https://huggingface.co/lllyasviel/Annotators/resolve/main/sk_model2.pth
+cd ../textual_inversion
+wget -O verybadimagenegative_v1.3.pt https://civitai.com/api/download/models/25820
+```
+
+### Install models (Toon Shading)
+
+```
+cd models/
+cd stable_diffusion/
+wget -O aingdiffusion_v12.safetensors https://civitai.com/api/download/models/229575
+cd ../AnimateDiff
+wget -O mm_sd_v15_v2.ckpt https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt
+cd ../ControlNet
+wget -O control_v11p_sd15_lineart.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+wget -O control_v11f1e_sd15_tile.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1e_sd15_tile.pth
+wget -O control_v11f1p_sd15_depth.pth https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth
+cd ../Annotators
+wget -O sk_model.pth https://huggingface.co/lllyasviel/Annotators/resolve/main/sk_model.pth
+wget -O sk_model2.pth https://huggingface.co/lllyasviel/Annotators/resolve/main/sk_model2.pth
+cd ../textual_inversion
+wget -O verybadimagenegative_v1.3.pt https://civitai.com/api/download/models/25820
+cd ../..
+```
+
+### Run
+
+```
+python3 -m streamlit run DiffSynth_Studio.py --server.port 8188
 ```
 
 https://github.com/Artiprocher/DiffSynth-Studio/assets/35051019/93085557-73f3-4eee-a205-9829591ef954
